@@ -1,13 +1,13 @@
-package com.ash.clean.cleanarchitecturemain;
+package com.ash.clean.buckpal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CleanArchitectureMainApplication {
+public class BuckinghamApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CleanArchitectureMainApplication.class, args);
+        SpringApplication.run(BuckinghamApplication.class, args);
     }
 
 }
