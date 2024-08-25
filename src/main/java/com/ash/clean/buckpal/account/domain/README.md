@@ -1,5 +1,6 @@
 # Domain Model.
 
+--- 
 ### Account
 - 실제 계좌의 스냅샷을 제공한다.
 - 계좌에 대한 모든 입금과 출금은 Activity 모델에 포착된다.

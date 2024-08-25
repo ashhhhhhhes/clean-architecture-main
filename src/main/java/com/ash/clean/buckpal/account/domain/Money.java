@@ -10,6 +10,11 @@ public class Money {
 
 	public static Money ZERO = Money.of(0L);
 
+	public Money(BigInteger amount) {
+		this.amount = amount;
+
+	}
+
 	@NonNull
 	private final BigInteger amount;
 
