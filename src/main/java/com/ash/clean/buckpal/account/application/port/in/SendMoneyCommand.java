@@ -1,17 +1,16 @@
 package com.ash.clean.buckpal.account.application.port.in;
 
 import com.ash.clean.buckpal.account.common.SelfValidating;
-import com.ash.clean.buckpal.account.domain.Account;
 import com.ash.clean.buckpal.account.domain.Account.AccountId;
 import com.ash.clean.buckpal.account.domain.Money;
 import jakarta.validation.constraints.NotNull;
 import lombok.EqualsAndHashCode;
-import lombok.Value;
+import lombok.Getter;
+import org.springframework.util.Assert;
 
-@Value
+@Getter
 @EqualsAndHashCode(callSuper = false)
-public
-class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {
+public class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {
 
     @NotNull
     private final AccountId sourceAccountId;
@@ -31,4 +30,5 @@ class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {
         this.money = money;
         this.validateSelf();
     }
+
 }

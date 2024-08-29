@@ -62,7 +62,7 @@ public class Activity {
         this.money = money;
     }
 
-    public  static  class  ActivityId {
+    public static class ActivityId {
         Long value;
     }
 }
